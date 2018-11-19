@@ -1,7 +1,7 @@
 $(document).ready(function () {
 // "https://api.giphy.com/v1/gifs/search?q=&api_key=mlT0GJ2Cu0hPQIBJR40GnauLvuSIF5d4$limit=5"
 
-var cartoonArray = ["The Simpsons", "Futurama", "Metalocalypse", "Family Guy", "King of the Hill"];
+var cartoonArray = ["Lebron James", "Portland Trailblazers", "Antetokounmpo", "Michael Jordan", "All Star Game"];
 
 function gifName() {
     var gifN = $(this).attr("data")
@@ -19,7 +19,7 @@ for (i = 0; i < cartoonArray.length; i++) {
         console.log($("newGif"))
     
         cartoonArray.push(newGif);
-        $(".gif-input").empty();
+        
         
         for (i = 0; i < cartoonArray.length; i++) {
             $(".gifs-here").append("<button data='" + cartoonArray[i] +  "'>" + cartoonArray[i] + "</button>")};  
@@ -28,7 +28,7 @@ for (i = 0; i < cartoonArray.length; i++) {
 $("button").on("click", function() {
    var textPull = $(this).attr("data");
    console.log(textPull)
-   var queryURL = "https://api.giphy.com/v1/gifs/search?q=cartoon " + $.trim(textPull) + "&api_key=mlT0GJ2Cu0hPQIBJR40GnauLvuSIF5d4&limit=10"
+   var queryURL = "https://api.giphy.com/v1/gifs/search?q=nba " + $.trim(textPull) + "&api_key=mlT0GJ2Cu0hPQIBJR40GnauLvuSIF5d4&limit=10"
    console.log(queryURL);
    
 
