@@ -22,7 +22,7 @@ form {
 
 body {
      background: url(https://wallpapercave.com/wp/wp2617738.jpg); background-repeat: no-repeat ;
-  background-size: auto; 
+  background-size: cover; 
   background-attachment: fixed;
 }
 
@@ -45,8 +45,10 @@ body {
 p {
     color: white;
     margin-left: 10px;
-    
-}
+    text-align: center;
+    border: 3px rgb(102, 32, 50) solid;
+    border-top: 0px;
+    }
 
 img {
     border: 2px rgb(102, 32, 50) solid;
@@ -61,7 +63,7 @@ img {
 
 @media screen and (min-width: 980 px) {
    body {
-    background-size: 100%;
+    background-size: 75%;
     background-repeat: no-repeat;
     background-attachment: fixed;
    } 
