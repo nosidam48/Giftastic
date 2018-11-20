@@ -39,15 +39,17 @@ body {
     background-color: rgb(102, 32, 50);
     border: 5px rgb(23, 69, 102) double;
     border-radius: 5px;
-    color: white;
+    color: rgb(223, 221, 221);
 }
 
 p {
     color: white;
+    font-size: 18px;
     margin-left: 10px;
     text-align: center;
     border: 3px rgb(102, 32, 50) solid;
     border-top: 0px;
+    background-color: rgb(102, 32, 50)
     }
 
 img {
